@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCode - Khám phá</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #d4edda, #ffffff);
+            color: #000000;
+        }
+        header {
+            background: linear-gradient(to right, #a5d6a7, #81c784);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            background: linear-gradient(to right, #81c784, #66bb6a);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 16px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+        .content {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 100px;
+        }
+        .place {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .place img {
+            width: 45%;
+            margin: 10px;
+            border-radius: 12px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(to right, #a5d6a7, #81c784);
+            color: white;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffffdd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    color: #2e7d32;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #388e3c;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #66bb6a;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #4caf50;
+}
+footer {
+  background: linear-gradient(to right, #a5d6a7, #81c784);
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 60px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        Vấn Đề Môi Trường
+    </header>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="tintuc.html">Tin tức</a>
+        <a href="khampha.html">Khám phá</a>
+        <a href="duan.html">Dự án</a>
+        <a href="blog.html">Blog</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </nav>
+    <br><br><br><br><br>
+    <header style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <img src="logo.png" alt="Logo EcoCode" style="height: 60px; border-radius: 8px;">
+        <span>EcoCode - Cùng Hành Động Vì Môi Trường</span>
+    </header>
+    <div class="contact-form">
+        <h2>Bạn có đề xuất đất nước nào có môi trường XANH-SẠCH-ĐẸP đáng để đi du lịch không?</h2>
+        <form action="https://formspree.io/f/mvgkdvgz" method="POST">
+            <input type="text" name="name" placeholder="Tên của bạn" required>
+            <input type="email" name="email" placeholder="Email của bạn" required>
+            <textarea name="message" placeholder="Hãy ghi vài điều thú vị về đất nước đó đi..." rows="5" required></textarea>
+            <input type="file" id="commentImage" accept="image/*"><br>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+    
+    <div class="content">
+        <h1>Hình Ảnh Môi Trường Đẹp</h1>
+        <p><b>Dưới đây là một số thủ đô, đất nước có môi trường tương đối xanh-sạch-đẹp và có cảnh quan môi trường ấn tượng. Nếu có cơ hội nãy ghé qua những đất nước này để chiêm ngưỡng không khí, cũng như thiên nhiên ở đây nhé!</b></p>
+
+        <div class="place">
+            <h3>Đà Nẵng - Việt Nam</h3>
+            <p>Đà Nẵng là một trong những thành phố lớn và phát triển nhanh nhất tại Việt Nam... Thành phố không chỉ là trung tâm kinh tế, chính trị, văn hóa mà còn là điểm du lịch nổi tiếng với môi trường sống đáng mơ ước.</p>
+            <img src="https://files.ubdt.gov.vn/ContentFolder/ecm/source_files/2022/06/13/14371977_dnang762022_22-06-13.jpg" alt="Thành phố Đà Nẵng">
+            <img src="https://media.vneconomy.vn/images/upload/2022/03/18/moi-truong-da-nang1.jpg" alt="Thành phố Đà Nẵng">
+            <p>Mặc dù còn một số thách thức về xử lý rác thải, nhưng Đà Nẵng được xem là thành phố đáng sống nhờ môi trường sạch sẽ và không khí trong lành.</p>
+        </div>
+<hr>
+        <div class="place">
+            <h3>Vancouver - Canada</h3>
+            <p>Vancouver là thành phố lớn nhất ở tỉnh British Columbia, nổi tiếng với thiên nhiên hùng vĩ, khí hậu ôn hòa và chính sách môi trường nghiêm ngặt.</p>
+            <img src="https://vigotour.com.vn/upload/photos/images/English%20Bay.jpg" alt="Vancouver">
+            <img src="https://edupath.org.vn/wp-content/uploads/2022/12/du-hoc-vancouver-canada.png" alt="Vancouver Canada">
+            <p>Vancouver được mệnh danh là một trong những thành phố sạch nhất thế giới.</p>
+        </div>
+<hr>
+        <div class="place">
+            <h3>Auckland - New Zealand</h3>
+            <p>Auckland nổi tiếng với môi trường trong lành, nhiều không gian xanh và chính sách phát triển bền vững.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOXBW0o8gywoIH7F525JqPSy4QKovgS9izg&s" alt="Auckland">
+            <img src="https://media.baobinhphuoc.com.vn/Content/UploadFiles/EditorFiles/images/2017/Quy1/phong-canh-tuyet-dep-o-auckland-queenstown-825032017050704.jpg" alt="Auckland phong cảnh">
+            <p>Auckland luôn nằm trong top thành phố có chất lượng sống tốt nhất thế giới.</p>
+        </div>
+        <hr>
+        <div class="place">
+            <div class="city-section">
+                <h3>Đan Mạch</h3>
+                <p>Đan Mạch hiện là quốc gia thân thiện với môi trường, khi hậu tốt nhất thế giới nhờ các chính sách hiệu quả để giảm phát thải khí nhà kính và ngăn chặn biến đổi khi hậu. Quốc gia được xếp vào hạng cao nhất trong việc quản lý chất thải rắn</p>
+                <img src="ĐM.png">
+                <img src="ĐM1.png">
+                <p> “Rác thải thực sự không phải là rác” - đó có lẽ là câu nói mà nhiều người Đan Mạch đã thuộc nằm lòng. Không chỉ là lời nói, nhiều năm qua, Đan Mạch - được mệnh danh là quốc gia đi đầu trong việc tận dụng rác thải, thực phẩm thừa, do đó môi trường ở Đan Mạch mới xanh sạch đẹp đến vậy. </p>
+    </tr>
+            </div>
+            <hr>
+            <div class="place">
+    <h3>Thụy Sĩ</h3>
+    <p>Thụy Sĩ có hệ thống xử lý rác và nước thải cực kỳ hiệu quả.Ngoài ra ở đây bảo tồn thiên nhiên rất tốt, có nhiều hồ và núi sạch đẹp</p>
+    <img src="TS.png">
+    <img src="TS1.png">
+    <p> Nhờ có nhiều hồ và núi sạch đẹp nên Thụy Sĩ là một trong những nơi đáng để thăm quan và du lịch.</p>
+</div>
+<hr>
+<div class="place">
+    <h3>Na Uy</h3>
+    <p>Môi trường ở Na Uy được đánh giá là trong lành, xanh sạch và bền vững hàng đầu thế giới.</p>
+    <img src="NU.png">
+    <img src="NU1.png">
+    <p> Na Uy là hình mẫu lý tưởng về sống xanh và phát triển bền vững.</p>
+</div>
+<hr>
+        <div class="place">
+            <h3>Amsterdam-Hà Lan</h3>
+            <p>Được hình thành từ một làng chài nhỏ vào thế kỷ 12. Ngày nay, nó là một thành phố hiện đại, mộng mơ và đầy hấp dẫn. Với những ngôi nhà nhiều màu sắc, chiếc cầu cổ kính và hệ thống kênh đào</p>
+             <img src="HL.png.jpg">
+             <img src="HL1.png.jpg">
+             <p>Amsterdam là một trung tâm phố cổ lớn nhất châu Âu. Khám phá vẻ đẹp thơ mộng của thành phố này là một trải nghiệm không thể thiếu trong cuộc đời. </p>
+        </div>
+        <hr>
+        <div class="place">
+            <h3>Athens - Hy Lạp</h3>
+            <p>Athens cũng là thành phố lớn nhất Hy Lạp. Với lịch sử hình thành ít nhất 3000 năm, Athens nằm trong những thành phố cổ nhất thế giới. Ngày nay, Athens là thành phố lớn thứ 8 châu Âu và trở thành trung tâm kinh doanh hàng đầu trong khối Liên minh châu Âu. Thành phố Athens đánh dấu vị thế của mình trong chính trị, văn hóa, công nghiệp, tài chính và kinh tế ở Hy Lạp. Với những ai yêu thích lịch sử và nguồn gốc của nhân loại, </p>
+            <img src="HLa.png.jpg">
+            <img src="HLa1.png.jpg">
+            <p>Athens là điểm đến không thể bỏ qua. Hãy ghé qua khi bạn có dịp đến Hy Lạp để khám phá thành phố mang màu sắc cổ điển với những nét kiến trúc độc đáo. </p>
+        </div>
+        <hr>
+<div class="place">
+    <h3>Ankara - Thổ Nhĩ Kỳ</h3>
+    <p>Ankara nằm ở độ cao trung bình 938 mét so với mực nước biển, ở vùng đồng bằng rộng lớn ở miền trung Anatolia. Ankara tên trước đây là Angora, thủ đô Thổ Nhĩ Kỳ, là tỉnh và thành phố lớn thứ hai của Thổ Nhĩ Kì sau Istanbul. Ankara là thủ đô, trung tâm hành chính và nhiều nền văn minh vĩ đại có lịch sử từ thời đồ đá của Thổ Nhĩ Kỳ, đi dọc những con phố ở đây bạn sẽ thấy được sự pha trộn của các yếu tố hiện đại và lịch sử cổ kính. </p>
+    <img src="TNK.jpg">
+    <img src="TNK1.jpg">
+    <p>Du lịch Ankara Thổ Nhĩ Kỳ mang đến cơ hội duy nhất để trải nghiệm các nền văn hóa và kiến trúc Thổ Nhĩ Kỳ.</p>
+</div>
+<hr>
+<div class="place">
+    <h3>Seoul - Hàn Quốc</h3>
+    <p>Một trong những nền kinh tế phát triển hàng đầu châu Á, cũng như về cảnh đẹp</p>
+    <img src="HQ">
+    <img src="HQ1.jpg">
+    <P>Nhắc tới Hàn Quốc, chúng ta không thể không nhắc tới Núi Namsan, Hồ Seokchon, Suối Cheonggye Cheon
+    </P>
+</div>
+<hr>
+<div class="place">
+    <h3>Singapore</h3>
+    <p>Singapore là một quốc đảo nhỏ nằm ở Đông Nam Á, gồm một đảo chính và nhiều đảo nhỏ xung quanh</p>
+    <img src="SG.png">
+    <img src="SG1.png">
+    <p>Dù diện tích không lớn, Singapore lại là một trong những quốc gia phát triển và hiện đại nhất Đông Nam Á.</p>
+</div>
+<hr>
+<div class="place">
+    <h3>Thái Lan</h3>
+    <p>Thái Lan (tên chính thức: Vương quốc Thái Lan) là một quốc gia nằm ở khu vực Đông Nam Á, nổi tiếng với văn hóa đặc sắc, nền du lịch phát triển, và sự kết hợp hài hòa giữa truyền thống và hiện đại</p>
+    <img src="TL.png">
+    <img src="TL1.png">
+    <p>Thái Lan là một trong những nền kinh tế lớn ở Đông Nam Á, nổi bật trong các lĩnh vực: du lịch, nông nghiệp, sản xuất ô tô và linh kiện điện tử.</p>
+</div>
+<hr>
+<div class="place">
+    <h3>Nhật Bản</h3>
+    <p>Thái Lan là một trong những nền kinh tế lớn ở Đông Nam Á, nổi bật trong các lĩnh vực: du lịch, nông nghiệp, sản xuất ô tô và linh kiện điện tử.</p>
+    <img src="NB.png">
+    <img src="NB1.png">
+</div>
+<hr>
+<div class="place">
+    <h3>Đức</h3>
+    <p>Môi trường ở Đức được đánh giá rất cao nhờ ý thức bảo vệ môi trường của người dân và các chính sách hiệu quả từ chính phủ. Người dân Đức có thói quen phân loại rác rất nghiêm túc, góp phần không nhỏ vào việc giảm thiểu ô nhiễm. Các thành phố ở Đức sạch sẽ, có nhiều không gian xanh, tạo nên môi trường sống trong lành và chất lượng. Bên cạnh đó, Đức là một trong những quốc gia tiên phong trong việc sử dụng năng lượng tái tạo như điện gió và điện mặt trời. Hệ thống giao thông công cộng hiện đại, tiện lợi và thân thiện với môi trường cũng giúp giảm đáng kể lượng khí thải ra không khí.</p>
+    <img src="Đ.png">
+    <img src="Đ1.png">
+</div>
+</body>
+<footer>
+    <div class="footer-content">
+      <p>&copy; 2025 ECOCODE - Chung tay vì một hành tinh xanh 🌱</p>
+      <p>“Mỗi hành động nhỏ hôm nay là một thay đổi lớn cho ngày mai.”</p>
+      <p>Liên hệ với chúng tôi nếu bạn muốn cùng lan tỏa ý tưởng bảo vệ môi trường!</p>
+      
+      <div class="footer-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="tintuc.html">Tin tức</a>
+        <a href="khampha.html">Khám phá</a>
+        <a href="duan.html">Dự án</a>
+        <a href="blog.html">Blog</a>
+        <a href="lienhe.html">Liên hệ</a>
+      </div>
+    </div>
+  </footer>
+    
+</html>
